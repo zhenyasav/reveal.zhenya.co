@@ -1,0 +1,43 @@
+<body>
+	
+	{{>forkme url="https://github.com/zhenyasav/reveal"}}
+	
+	<img src="/images/reveal.svg" alt="Reveal">
+	
+	<h2>A Meteor package for animating data context changes</h2>
+
+	{{>main}}
+
+	<p class="narrow left">In the example above, each time group is surrounded in a reveal helper and the animation is taken care of whenever the time changes:</p>
+
+	<pre class="narrow left">{{|#reveal seconds}}
+  &lt;span class="seconds"&gt;{{|this}}&lt;/span&gt;
+{{|/reveal}}</pre>
+
+	<div class="narrow">
+		<a class="button" href="https://github.com/zhenyasav/reveal">View on GitHub</a>
+	</div>
+	
+</body>
+
+<template name="main">
+	<div class="narrow">
+		<div class="demo">
+			{{#reveal hours}}
+				{{this}}
+			{{/reveal}}
+			:
+			{{#reveal minutes}}
+				{{this}}
+			{{/reveal}}
+			:
+			{{#reveal seconds}}
+				{{this}}
+			{{/reveal}}
+
+			{{#reveal ampm}}
+				{{this}}
+			{{/reveal}}
+		</div>
+	</div>
+</template>

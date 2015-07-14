@@ -1,0 +1,6 @@
+[submodule "packages/zhenya:boilerplate"]
+	path = packages/zhenya:boilerplate
+	url = https://github.com/zhenyasav/meteor-boilerplate
+[submodule "packages/zhenya:forkme"]
+	path = packages/zhenya:forkme
+	url = https://github.com/zhenyasav/forkme

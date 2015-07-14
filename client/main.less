@@ -1,0 +1,48 @@
+@import '/packages/zhenya:boilerplate/all.import.less';
+
+.reset();
+.utils();
+.colors();
+.shades();
+
+body {
+	text-align: center;
+	padding: 15px;
+	padding-top: 60px;
+	color: @darkgray;
+}
+
+h2 {
+	font-weight: 300;
+}
+
+.narrow {
+	max-width: 400px;
+	margin: 30px auto;
+}
+
+.left {
+	text-align: left;
+}
+
+.demo {
+	margin: 15px;
+	display: inline-block;
+	font-size: 180%;
+	background-color: @light;
+	padding: 15px 25px;
+	.border-radius(4px);
+
+	.reveal {
+		display: inline-block;
+	}
+}
+
+.button {
+	padding: 10px 15px;
+	.border-radius(4px);
+	background-color: @blue;
+	color: @white;
+	text-decoration: none;
+	display: inline-block;
+}
